@@ -1,0 +1,317 @@
+/* ---------- variables ---------- */
+
+:root {
+  --spacing_sm: 8px; /* spacing_sm */
+  --spacing_md: 16px; /* spacing_md */
+  --spacing_lg: 24px; /* spacing_lg */
+  --spacing_xl: 48px; /* spacing_xl */
+
+  --backColor: #ade0ae;
+  --textColor: #070807;
+
+  --mainFont: "Averia Libre";
+}
+
+  /* ----------- structure -------------- */
+
+html {
+  font-family: var(--mainFont);
+  font-weight: lighter;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+body {
+  background: var(--backColor);
+  color: var(--textColor);
+  margin: 0;
+}
+
+.wrap {
+  max-width: 666px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+.content {
+  padding: 24px 0;
+}
+
+.columns {
+  columns: 2;
+  column-gap: 24px;
+}
+
+.center {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  mix-blend-mode: darken;
+}
+
+/* ---------- typography ----------- */
+
+
+
+h1 {
+  font-family: "GothBallCrap";
+  text-align: center;
+}
+
+h2 {
+  font-family: "GothBallCrap";
+}
+
+small {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+a {
+  color: var(--textColor);
+}
+
+em {
+  font-size:1.2em;
+}
+
+/* -------------- utils ------------- */
+
+.display-none, .hidden {
+  display: none!important;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+figure {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+figcaption {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  opacity: 0.4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* border_radius */
+  overflow: hidden;
+  line-height: 0;
+}
+
+/* ----------- content -------------- */
+
+body {
+  background: url("../img/back-new.jpg");
+  background-size: cover;
+}
+
+/* -------- FLEX ---------*/
+
+.flex-row {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.flex-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.flex-2 {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.flex-3 {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+}
+
+.flex-4 {
+  -webkit-flex: 4;
+  -ms-flex: 4;
+  flex: 4;
+}
+
+.flex-5 {
+  -webkit-flex: 5;
+  -ms-flex: 5;
+  flex: 5;
+}
+
+.flex-6 {
+  -webkit-flex: 6;
+  -ms-flex: 6;
+  flex: 6;
+}
+
+.columns-2 {
+  -webkit-column-width: 400px;
+  -moz-column-width: 400px;
+  column-width: 400px;
+}
+
+.columns p {
+  margin: 0;
+}
+
+.row {
+  display:flex;
+  flex-direction:row;
+  margin: 0 -8px; /* spacing_sm */
+}
+
+.half {
+  flex:1;
+  line-height:0;
+  padding-top:0;
+  padding-right: 8px; /* spacing_sm */
+  padding-bottom:0;
+  padding-left: 8px; /* spacing_sm */
+}
+
+.half p {
+  margin-top:0;
+  margin-right:0;
+  margin-bottom:16px; /* spacing_md */
+  margin-left:0;
+}
+
+/* -------- PADDING ---------*/
+
+.no-padding-left {
+  padding-left: 0;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+
+.small-padding {
+  padding: 15px;
+}
+
+.small-padding-left {
+  padding-left: 15px;
+}
+
+.small-padding-right {
+  padding-right: 15px;
+}
+
+.small-padding-top {
+  padding-top: 15px;
+}
+
+.small-padding-bottom {
+  padding-bottom: 15px;
+}
+
+.medium-padding {
+  padding: 30px;
+}
+
+.medium-padding-top {
+  padding-top: 30px;
+}
+
+.medium-padding-bottom {
+  padding-bottom: 30px;
+}
+
+.medium-padding-right {
+  padding-right: 30px;
+}
+
+.medium-padding-left {
+  padding-left: 30px;
+}
+
+.big-padding {
+  padding: 60px;
+}
+
+.big-padding-top {
+  padding-top: 60px;
+}
+
+.big-padding-bottom {
+  padding-bottom: 60px;
+}
+
+.big-padding-left {
+  padding-left: 60px;
+}
+
+.big-padding-right {
+  padding-right: 60px;
+}
+
+/* -------- MARGINS ---------*/
+
+.small-margin-top {
+  margin-top: 15px;
+}
+
+.small-margin-left {
+  margin-left: 15px;
+}
+
+.small-margin-right {
+  margin-right: 15px;
+}
+
+.small-margin-bottom {
+  margin-bottom: 15px;
+}
+
+.medium-margin-top {
+  margin-top: 30px;
+}
+
+.medium-margin-bottom {
+  margin-bottom: 30px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+@media screen and (max-width:1000px) {
+
+}
