@@ -9,10 +9,20 @@
   --backColor: #ade0ae;
   --textColor: #070807;
 
-  --mainFont: "Averia Libre";
+  --mainFont: "HawthornEF";
 }
 
-  /* ----------- structure -------------- */
+/* ----------- fonts -------------- */
+
+@font-face {
+  font-family: "Bastard";
+  src: url("Bastard.woff2") format("woff2"), url("Bastard.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ----------- structure -------------- */
 
 html {
   font-family: var(--mainFont);
@@ -115,8 +125,45 @@ img {
 /* ----------- content -------------- */
 
 body {
-  background: url("../img/back-new.jpg");
+  background: url("../img/back.jpg");
   background-size: cover;
+}
+
+.home {
+  height: 100% !important;
+  background-size: cover;
+  font-family: "Bastard";
+  color: #f9f9e4;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+.home-caption {
+  position: absolute;
+  top: 150px;
+  width: calc(100% - 60px);
+  text-align: center;
+  padding: 0 30px;
+  left: 0;
+  font-size: 40px;
+  line-height: 1.2em;
+}
+
+.home-insta {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+.home-insta a {
+  text-decoration: none;
+  color: #f9f9e4;
+}
+
+.home-insta a:hover {
+  color: #666;
 }
 
 /* -------- FLEX ---------*/
