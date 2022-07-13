@@ -149,6 +149,25 @@ body {
   line-height: 1.2em;
 }
 
+.logo {
+  position: absolute;
+  top: 150px;
+  width:700px;
+  text-align: center;
+  left: 50%;
+  margin-left:-350px;
+  z-index:100;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 .home-insta {
   position: absolute;
   bottom: 30px;
@@ -164,6 +183,10 @@ body {
 
 .home-insta a:hover {
   color: #666;
+}
+
+.social-link {
+  padding: 0 8px;
 }
 
 /* -------- FLEX ---------*/
