@@ -22,6 +22,24 @@
   font-display: swap;
 }
 
+@font-face {
+    font-family: 'Garamon(d/t)';
+    src: url('Garamondt-Italic.woff2') format('woff2'),
+        url('Garamondt-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Garamon(d/t)';
+    src: url('Garamondt-Regular.woff2') format('woff2'),
+        url('Garamondt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* ----------- structure -------------- */
 
 html {
@@ -63,8 +81,6 @@ img {
 }
 
 /* ---------- typography ----------- */
-
-
 
 h1 {
   font-family: "GothBallCrap";
@@ -187,6 +203,8 @@ body {
 
 .social-link {
   padding: 0 8px;
+  font-family: 'Garamon(d/t)';
+  font-size:16px;
 }
 
 /* -------- FLEX ---------*/
