@@ -6,8 +6,8 @@
   --spacing_lg: 24px; /* spacing_lg */
   --spacing_xl: 48px; /* spacing_xl */
 
-  --backColor: #ade0ae;
-  --textColor: #070807;
+  --backColor: #000000;
+  --textColor: #ffffff;
 
   --mainFont: "HawthornEF";
 }
@@ -149,14 +149,19 @@ body {
   height: 100% !important;
   background-size: cover;
   font-family: "Bastard";
-  color: #f9f9e4;
   background-position-x: center;
   background-position-y: top;
 }
 
+.center-content {
+  max-width:700px;
+  margin: 50px auto;
+  text-align: center;
+  z-index:100;
+  position:relative;
+}
+
 .home-caption {
-  position: absolute;
-  top: 150px;
   width: calc(100% - 60px);
   text-align: center;
   padding: 0 30px;
@@ -166,13 +171,36 @@ body {
 }
 
 .logo {
-  position: absolute;
-  top: 150px;
-  width:700px;
-  text-align: center;
-  left: 50%;
-  margin-left:-350px;
-  z-index:100;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.button {
+  padding: 12px 16px;
+  background: var(--backColor);
+  text-decoration:none;
+  display:inline-block;
+  width:auto;
+}
+
+.video-announcement img {
+  max-width:600px;
+}
+
+.home-caption img {
+  max-width:300px;
+}
+
+.noise {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  pointer-events:none;
+  z-index:200;
+  opacity:0.1;
+  background: url("../img/noise.gif");
 }
 
 @keyframes rotation {
@@ -184,7 +212,7 @@ body {
   }
 }
 
-.home-insta {
+.home-social {
   position: absolute;
   bottom: 30px;
   text-align: center;
@@ -192,12 +220,12 @@ body {
   color: #fff;
 }
 
-.home-insta a {
+.home-social a {
   text-decoration: none;
   color: #f9f9e4;
 }
 
-.home-insta a:hover {
+.home-social a:hover {
   color: #666;
 }
 
