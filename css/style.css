@@ -47,6 +47,7 @@ html {
   font-weight: lighter;
   font-size: 22px;
   line-height: 33px;
+  min-height: 100%;
 }
 
 body {
@@ -201,6 +202,19 @@ body {
   z-index:200;
   opacity:0.1;
   background: url("../img/noise.gif");
+}
+
+.black-overlay {
+  background:#00000030;
+  width:100%;
+  height:100%;
+  pointer-events: none;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:0;
 }
 
 @keyframes rotation {
@@ -428,6 +442,18 @@ body {
   margin-bottom: 0 !important;
 }
 
-@media screen and (max-width:1000px) {
-
+@media screen and (max-width:480px) {
+  .logo {
+    max-width:300px;
+  }
+  .home-caption img {
+    max-width:200px;
+  }
+  .home-social a {
+    display:block;
+  }
+  .social-link {
+    font-size:20px;
+    padding: 8px 0;
+  }
 }
