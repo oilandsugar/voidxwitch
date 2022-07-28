@@ -1,3 +1,5 @@
+console.log("test");
+
 const setBackgroundImage = () => {
   let images = [
     "img/random-background/are-you-ok-1.jpg",
@@ -14,8 +16,10 @@ const setBackgroundImage = () => {
     "img/random-background/are-you-ok-12.jpg",
     "img/random-background/are-you-ok-13.jpg",
   ]
-  let randSelect = images[Math.floor(Math.random() * images.length)]
-  document.body.style.backgroundImage = 'url(' + randSelect + ')';
+  let randSelect = images[Math.floor(Math.random() * images.length)];
+  let headerImg = document.getElementById("main-img");
+  console.log(headerImg)
+  document.getElementById("main-img").style.backgroundImage = 'url(' + randSelect + ')';
 }
 
 setBackgroundImage();

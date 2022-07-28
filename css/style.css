@@ -142,8 +142,19 @@ img {
 /* ----------- content -------------- */
 
 body {
-  background: url("../img/back.jpg");
+  background: var(--backColor);
+}
+
+#main-img {
+  width:100%;
+  height:100vh;
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  background-image: url("../img/random-background/are-you-ok-13.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .home {
@@ -184,10 +195,6 @@ body {
   width:auto;
 }
 
-.video-announcement img {
-  max-width:600px;
-}
-
 .home-caption img {
   max-width:300px;
 }
@@ -202,6 +209,14 @@ body {
   z-index:200;
   opacity:0.1;
   background: url("../img/noise.gif");
+}
+
+.gradient {
+  height:200px;
+  width:100%;
+  position:absolute;
+  top: calc(100vh - 200px);
+  background-image: linear-gradient(#00000000, #000000);
 }
 
 .black-overlay {
@@ -227,8 +242,7 @@ body {
 }
 
 .home-social {
-  position: absolute;
-  bottom: 30px;
+  margin-bottom: 30px;
   text-align: center;
   width: 100%;
   color: #fff;
@@ -247,6 +261,50 @@ body {
   padding: 0 8px;
   font-family: 'Garamon(d/t)';
   font-size:16px;
+}
+
+/* --- Videos --- */
+
+.video-announcement {
+  position:relative;
+  z-index:1;
+  text-align:center;
+}
+
+.video-announcement img {
+  max-width:600px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.video-container.sd {
+  padding-bottom: 72.25%;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project.video {
+  min-width:calc(75% - 16px);
+  max-width: calc(75% - 16px);
+  margin-top: 32px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border:18px solid #000;
 }
 
 /* -------- FLEX ---------*/
@@ -455,5 +513,19 @@ body {
   .social-link {
     font-size:20px;
     padding: 8px 0;
+  }
+  .video-announcement {
+    padding-top:0!important;
+  }
+  .video-announcement img {
+    max-width:250px;
+  }
+  .project.video {
+    max-width:100%;
+    border-right:0;
+    border-left:0;
+  }
+  #main-img {
+    height:60vh;
   }
 }
