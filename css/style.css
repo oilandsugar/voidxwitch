@@ -267,7 +267,7 @@ body {
 
 .video-announcement {
   position:relative;
-  z-index:1;
+  z-index:300;
   text-align:center;
 }
 
