@@ -15,6 +15,10 @@ const setBackgroundImage = () => {
     "img/random-background/are-you-ok-11.jpg",
     "img/random-background/are-you-ok-12.jpg",
     "img/random-background/are-you-ok-13.jpg",
+    "img/random-background/are-you-ok-14.jpg",
+    "img/random-background/are-you-ok-15.jpg",
+    "img/random-background/are-you-ok-16.jpg",
+    "img/random-background/are-you-ok-17.jpg",
   ]
   let randSelect = images[Math.floor(Math.random() * images.length)];
   let headerImg = document.getElementById("main-img");
