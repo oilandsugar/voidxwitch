@@ -1,5 +1,3 @@
-console.log("test");
-
 const setBackgroundImage = () => {
   let images = [
     "img/random-background/background-1.jpg",
@@ -21,7 +19,6 @@ const setBackgroundImage = () => {
   ]
   let randSelect = images[Math.floor(Math.random() * images.length)];
   let headerImg = document.getElementById("main-img");
-  console.log(headerImg)
   document.getElementById("main-img").style.backgroundImage = 'url(' + randSelect + ')';
 }
 
