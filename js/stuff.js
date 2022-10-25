@@ -2,23 +2,22 @@ console.log("test");
 
 const setBackgroundImage = () => {
   let images = [
-    "img/random-background/are-you-ok-1.jpg",
-    "img/random-background/are-you-ok-2.jpg",
-    "img/random-background/are-you-ok-3.jpg",
-    "img/random-background/are-you-ok-4.jpg",
-    "img/random-background/are-you-ok-5.jpg",
-    "img/random-background/are-you-ok-6.jpg",
-    "img/random-background/are-you-ok-7.jpg",
-    "img/random-background/are-you-ok-8.jpg",
-    "img/random-background/are-you-ok-9.jpg",
-    "img/random-background/are-you-ok-10.jpg",
-    "img/random-background/are-you-ok-11.jpg",
-    "img/random-background/are-you-ok-12.jpg",
-    "img/random-background/are-you-ok-13.jpg",
-    "img/random-background/are-you-ok-14.jpg",
-    "img/random-background/are-you-ok-15.jpg",
-    "img/random-background/are-you-ok-16.jpg",
-    "img/random-background/are-you-ok-17.jpg",
+    "img/random-background/background-1.jpg",
+    "img/random-background/background-2.jpg",
+    "img/random-background/background-3.jpg",
+    "img/random-background/background-4.jpg",
+    "img/random-background/background-5.jpg",
+    "img/random-background/background-6.jpg",
+    "img/random-background/background-7.jpg",
+    "img/random-background/background-8.jpg",
+    "img/random-background/background-9.jpg",
+    "img/random-background/background-10.jpg",
+    "img/random-background/background-11.jpg",
+    "img/random-background/background-12.jpg",
+    "img/random-background/background-13.jpg",
+    "img/random-background/background-14.jpg",
+    "img/random-background/background-15.jpg",
+    "img/random-background/background-16.jpg"
   ]
   let randSelect = images[Math.floor(Math.random() * images.length)];
   let headerImg = document.getElementById("main-img");
