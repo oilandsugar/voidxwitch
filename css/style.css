@@ -255,6 +255,32 @@ body {
   font-size:16px;
 }
 
+/* --- Links page --- */
+
+body.links {
+  background:#000;
+}
+
+.links-container {
+  margin-bottom:24px;
+}
+
+.button-link {
+  padding: 8px 16px;
+  background:black;
+  font-family: 'Garamon(d/t)';
+  font-size:16px;
+  display:block;
+  text-align:center;
+  margin-bottom:8px;
+  border-radius:4px;
+  margin-left:16px;
+  margin-right:16px;
+  z-index:500;
+  position:relative;
+  text-decoration: none;
+}
+
 /* --- Videos --- */
 
 .video-announcement {
@@ -519,5 +545,8 @@ body {
   }
   #main-img {
     height:60vh;
+  }
+  .gradient {
+    display:none;
   }
 }
