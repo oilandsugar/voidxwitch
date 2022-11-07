@@ -166,7 +166,7 @@ body {
 }
 
 .center-content {
-  max-width:700px;
+  max-width:900px;
   margin: 50px auto;
   text-align: center;
   z-index:100;
@@ -183,9 +183,9 @@ body {
 }
 
 .logo {
-  max-width:700px;
+  max-width:900px;
   margin:0 auto;
-  margin-top:250px;
+  margin-top:150px;
 }
 
 .button {
