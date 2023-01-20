@@ -48,6 +48,7 @@ html {
   font-size: 22px;
   line-height: 33px;
   min-height: 100%;
+  /*cursor: url('../img/cursor.gif'), pointer;*/
 }
 
 body {
@@ -228,6 +229,24 @@ body {
   background-image: linear-gradient(#000000, #00000000);
 }
 
+.gradient-bottom::after {
+  content:"";
+  height:200px;
+  width:100%;
+  position: absolute;
+  bottom:0;
+  background-image: linear-gradient(#00000000, #000000);
+}
+
+.gradient-top::after {
+  content:"";
+  height:200px;
+  width:100%;
+  position: absolute;
+  bottom:0;
+  background-image: linear-gradient(#000000, #00000000);
+}
+
 .black-overlay {
   background:#00000030;
   width:100%;
@@ -261,6 +280,79 @@ body {
   padding: 0 8px;
   font-family: 'Garamon(d/t)';
   font-size:16px;
+}
+
+/* --- background visuals --- */
+
+.single-image {
+  width:100%;
+  position:relative;
+  z-index:1;
+}
+
+/* --- photo slider --- */
+
+.gallery {
+  position:relative;
+  width:100%;
+  overflow: hidden;
+}
+
+.slider {
+  height:700px;
+  width:1046px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  position:relative;
+  border: 20px solid #000;
+  z-index:300;
+  margin: 100px auto;
+  line-height:0;
+}
+
+.slider-container {
+  width:calc(1046px * 4);
+  height:100%;
+  position:absolute;
+  top:0;
+  z-index:10;
+  list-style:none;
+  scroll-behavior: smooth;
+  display: flex;
+  padding:0;
+  margin:0;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+}
+
+.arrows {
+  position:relative;
+  z-index:300;
+  margin:0 auto;
+  position: absolute;
+  top: 450px;
+  width: 1160px;
+  left: 50%;
+  margin-left: -580px;
+  pointer-events: none;
+}
+
+.arrow {
+  width:100px;
+  pointer-events: auto;
+  cursor:pointer;
+}
+
+.arrow-left {
+  float:left;
+}
+
+.arrow-right {
+  float:right;
 }
 
 /* --- Links page --- */
@@ -362,7 +454,7 @@ body.links {
   right:0;
   left:0;
   z-index:-1;
-  margin-top:-75vh;
+  margin-top:-45vh;
 }
 
 #bottom-img {
@@ -378,6 +470,8 @@ body.links {
   position:absolute;
   top:0;
 }
+
+
 
 /* -------- FLEX ---------*/
 
