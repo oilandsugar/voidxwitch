@@ -1,20 +1,26 @@
-// slider
+// sliders
 
-const slidesContainer = document.getElementById("slides-container");
-const slide = document.querySelector(".slide");
-const prevButton = document.getElementById("slide-arrow-prev");
-const nextButton = document.getElementById("slide-arrow-next");
+const sliders = document.getElementsByClassName("gallery");
 
+for (var i = 0; i < sliders.length; i++) {
+    const slidesContainer = sliders.item(i).getElementsByClassName("slider")[0];
+    const slide = document.querySelector(".slide");
+    const prevButton = sliders.item(i).getElementsByClassName("arrow-left")[0];
+    const nextButton = sliders.item(i).getElementsByClassName("arrow-right")[0];
+    
+    nextButton.addEventListener("click", (event) => {
+        console.log("next")
+        const slideWidth = slide.clientWidth;
+        console.log(slidesContainer)
+        slidesContainer.scrollLeft += slideWidth;
+    });
 
-nextButton.addEventListener("click", (event) => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft += slideWidth;
-});
-
-prevButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft -= slideWidth;
-});
+    prevButton.addEventListener("click", () => {
+        console.log("prev")
+        const slideWidth = slide.clientWidth;
+        slidesContainer.scrollLeft -= slideWidth;
+    });
+}
 
 // random background image
 
@@ -42,4 +48,4 @@ const setBackgroundImage = () => {
   document.getElementById("main-img").style.backgroundImage = 'url(' + randSelect + ')';
 }
 
-setBackgroundImage();
+// setBackgroundImage();

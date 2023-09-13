@@ -153,7 +153,7 @@ body {
   top:0;
   right:0;
   left:0;
-  background-image: url("../img/random-background/background-13.jpg");
+  background-image: url("../img/top-image-release.png");
   background-size: cover;
   background-position: center;
 }
@@ -183,10 +183,22 @@ body {
   line-height: 1.2em;
 }
 
+.top-logo {
+  max-width:800px;
+  margin:0 auto;
+}
+
 .logo {
   max-width:900px;
   margin:0 auto;
   margin-top:150px;
+}
+
+.announcement {
+  max-width:400px;
+  margin:0 auto;
+  position:relative;
+    z-index:100;
 }
 
 .button {
@@ -300,7 +312,7 @@ body {
 
 .slider {
   height:700px;
-  width:1046px;
+  max-width:1046px;
   overflow-y: hidden;
   overflow-x: scroll;
   position:relative;
@@ -322,6 +334,19 @@ body {
   padding:0;
   margin:0;
 }
+
+#slides-container-black-mountain {
+ width:calc(1046px * 8);
+}
+
+#slides-container-samhain {
+ width:calc(1046px * 16);
+}
+
+#slides-container-coffin {
+ width:calc(1046px * 6);
+}
+
 
 .slide {
   width: 100%;
@@ -694,9 +719,17 @@ body.links {
     font-size:20px;
     padding: 8px 0;
   }
+    .video-announcement {
+        padding: 0 16px;
+    }
   .video-announcement img {
     max-width:250px;
   }
+    .background-element-wrapper img {
+        max-width:120%;
+        width:120%;
+        margin-left: -10%;
+    }
   .project.video {
     max-width:100%;
     border-right:0;
@@ -704,9 +737,12 @@ body.links {
     margin-top:0;
   }
   #main-img {
-    height:60vh;
+    height: 70vh; 
   }
-  .gradient {
-    display:none;
-  }
+    .gradient-up {
+        top: calc(60vh - 90px);
+    }
+    .announcement {
+        max-width:300px;
+    }
 }
