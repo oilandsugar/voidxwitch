@@ -71,21 +71,56 @@
             <div class="center-content top-logo">
                 <img src="./img/top-logo.png"/>
             </div>
+            <!-- ecstasy in darkness info -->
+            <div class="album-release">
+                <div class="column-left">
+                    <h1>ECSTASY IN DARKNESS</h1>
+                    <h2 class="center">OUT NOW</h2>
+                    <div class="album-links">
+                        <a href="https://voidxwitch.bandcamp.com/" class="button-link" aria-label="Bandcamp">
+                          BANDCAMP
+                        </a>
+                        <a href="https://www.voidxwitch.com" class="button-link hidden" aria-label="Spotify">
+                          SPOTIFY
+                        </a>
+                        <a href="https://music.apple.com/us/album/ecstasy-in-darkness/1708946766" class="button-link" aria-label="Apple Music">
+                          APPLE MUSIC
+                        </a>
+                    </div>
+                    <div class="merch">
+                        <a href="https://voidxwitch.bandcamp.com/merch"><img src="./img/merch-mockup.png"/></a>
+                        <div class="album-links">
+                            <a href="https://voidxwitch.bandcamp.com/merch" class="button-link" aria-label="Bandcamp merch page">
+                              BUY CD and ZINE
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-right">
+                    <iframe style="border: 0; width: 350px; height: 720px;" src="https://bandcamp.com/EmbeddedPlayer/album=616232310/size=large/bgcol=333333/linkcol=9a64ff/transparent=true/" seamless><a href="https://voidxwitch.bandcamp.com/album/ecstasy-in-darkness">Ecstasy in Darkness by VOIDXWITCH</a></iframe>
+                </div>
+            </div>
             <!-- album release date -->
-            <div class="release-date">
+            <div class="release-date hidden">
                 <div class="project announcement">
                     <img src="./img/release-date-animation.gif"/>
                 </div>
             </div>
-            <div class=" hidden center-content">
-                <div class="logo">
-                    <img src="./img/logo-white.png"  alt="Logo for VOIDXWITCH with an inverted bane symbol in the middle and twirling lines on the whole thing"/>
-                </div>
-                <div class="home-caption hidden">
-                    <img src="./img/july28.png"  alt="The date July 28 in a scribbled font"/>
+            <!-- kill the pain music video -->
+            <div id="kill-the-pain" class="video-announcement hidden">
+                <div class="project video">
+                  <div class="video-container">
+                      <iframe src="https://www.youtube.com/embed/XVyjS-Q3Oc0" title="are you ok?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
                 </div>
             </div>
+            <div id="kill-the-pain-bottom-img" class="bottom-wrapper hidden">
+                <img src="./img/kill-the-pain-scribble-blue.png"/>
+            </div>
             <!-- are you ok music video -->
+            <div class="are-you-ok-top-img background-element-wrapper">
+                <img src="./img/are-you-ok-top.jpg"/>
+            </div>
             <div class="video-announcement">
                 <div class="project video">
                   <div class="video-container">
@@ -94,7 +129,7 @@
                 </div>
             </div>
             <!-- all i do is destroy video teaser -->
-            <div class="background-element-wrapper">
+            <div class="kerosene-top-img background-element-wrapper">
                 <img src="./img/crazy-bitch.jpg"/>
             </div>
             <div id="all-i-do-is-destroy" class="video-wrapper">
@@ -110,79 +145,88 @@
                   </div>
                 </div>
             </div>
-            <div class="bottom-wrapper">
-              <div id="bottom-gradient" class="gradient gradient-down"></div>
-              <div id="bottom-img"></div>
+            <div class="kerosene-bottom-img bottom-wrapper">
+                <img src="./img/kerosene-bottom-img.jpg"/>
             </div>
-            <div class="gallery hidden" style="background-image: url('./img/black-mountain/background.jpg');">
-              <div class="slider">
+            <!-- mountain gallery -->
+            <div class="gallery">
+                <h2>BLVCK MOVNTAIN</h2>
+                <div class="slider">
                 <ul class="slider-container" id="slides-container-black-mountain">
-                    <li class="slide"><img src="./img/black-mountain/1.jpg"/></li>
-                    <li class="slide"><img src="./img/black-mountain/3.jpg"/></li>
-                    <li class="slide"><img src="./img/black-mountain/4.jpg"/></li>
-                    <li class="slide"><img src="./img/black-mountain/5.jpg"/></li>
-                    <li class="slide"><img src="./img/black-mountain/6.jpg"/></li>
+                        <li class="slide"><img src="./img/black-mountain/1.jpg"/></li>
+                        <li class="slide"><img src="./img/black-mountain/2.jpg"/></li>
+                        <li class="slide"><img src="./img/black-mountain/3.jpg"/></li>
+                        <li class="slide"><img src="./img/black-mountain/4.jpg"/></li>
+                        <li class="slide"><img src="./img/black-mountain/5.jpg"/></li>
+                        <li class="slide"><img src="./img/black-mountain/6.jpg"/></li>
                     <li class="slide"><img src="./img/black-mountain/7.jpg"/></li>
                     <li class="slide"><img src="./img/black-mountain/8.jpg"/></li>
+                    <li class="slide"><img src="./img/black-mountain/9.jpg"/></li>
+                    <li class="slide"><img src="./img/black-mountain/10.jpg"/></li>
                     <li class="slide"><img src="./img/black-mountain/11.jpg"/></li>
-                </ul>
-              </div>
-              <div class="arrows">
-                <div class="arrow arrow-left"><img src="./img/arrow-left.png"/></div>
-                <div class="arrow arrow-right"><img src="./img/arrow-right.png"/></div>
-              </div>
+                    <li class="slide"><img src="./img/black-mountain/12.jpg"/></li>
+                 </ul>
+                </div>
+                <div class="arrows">
+                 <div class="arrow arrow-left"><img src="./img/arrow-left.png"/></div>
+                  <div class="arrow arrow-right"><img src="./img/arrow-right.png"/></div>
+                 </div>
             </div>
-            <div class="gallery hidden">
-              <div class="slider">
+            <!-- samhain cemetery gallery -->
+            <div class="gallery">
+                <h2>SAMHAIN CEMETERY</h2>
+                <div class="slider">
                 <ul class="slider-container" id="slides-container-samhain">
-                    <li class="slide"><img src="./img/samhain/1.jpg"/></li>
-                    <li class="slide"><img src="./img/samhain/2.jpg"/></li>
-                    <li class="slide"><img src="./img/samhain/3.jpg"/></li>
-                    <li class="slide"><img src="./img/samhain/4.jpg"/></li>
-                    <li class="slide"><img src="./img/samhain/5.jpg"/></li>
-                    <li class="slide"><img src="./img/samhain/6.jpg"/></li>
+                        <li class="slide"><img src="./img/samhain/1.jpg"/></li>
+                        <li class="slide"><img src="./img/samhain/2.jpg"/></li>
+                        <li class="slide"><img src="./img/samhain/3.jpg"/></li>
+                        <li class="slide"><img src="./img/samhain/4.jpg"/></li>
+                        <li class="slide"><img src="./img/samhain/5.jpg"/></li>
+                        <li class="slide"><img src="./img/samhain/6.jpg"/></li>
+                    <li class="slide"><img src="./img/samhain/7.jpg"/></li>
                     <li class="slide"><img src="./img/samhain/8.jpg"/></li>
                     <li class="slide"><img src="./img/samhain/9.jpg"/></li>
+                    <li class="slide"><img src="./img/samhain/10.jpg"/></li>
                     <li class="slide"><img src="./img/samhain/11.jpg"/></li>
                     <li class="slide"><img src="./img/samhain/12.jpg"/></li>
                     <li class="slide"><img src="./img/samhain/13.jpg"/></li>
-                    <li class="slide"><img src="./img/samhain/14.jpg"/></li>
-                    <li class="slide"><img src="./img/samhain/17.jpg"/></li>
-                    <li class="slide"><img src="./img/samhain/18.jpg"/></li>
-                    <li class="slide"><img src="./img/samhain/19.jpg"/></li>
-                    <li class="slide"><img src="./img/samhain/20.jpg"/></li>
-                </ul>
-              </div>
-              <div class="arrows">
-                <div class="arrow arrow-left"><img src="./img/arrow-left.png"/></div>
-                <div class="arrow arrow-right"><img src="./img/arrow-right.png"/></div>
-              </div>
-            </div>
-             <div class="single-image hidden">
-                  <img src="./img/coffin/7.jpg"/>
+                 </ul>
                 </div>
-                <div class="gallery hidden">
-                  <div class="slider">
-                    <ul class="slider-container" id="slides-container-coffin">
+                <div class="arrows">
+                 <div class="arrow arrow-left"><img src="./img/arrow-left.png"/></div>
+                  <div class="arrow arrow-right"><img src="./img/arrow-right.png"/></div>
+                 </div>
+            </div>
+            <!-- coffin gallery -->
+            <div class="gallery">
+                <h2>COFFIN</h2>
+                <div class="slider">
+                <ul class="slider-container" id="slides-container-coffin">
                         <li class="slide"><img src="./img/coffin/1.jpg"/></li>
                         <li class="slide"><img src="./img/coffin/2.jpg"/></li>
                         <li class="slide"><img src="./img/coffin/3.jpg"/></li>
                         <li class="slide"><img src="./img/coffin/4.jpg"/></li>
                         <li class="slide"><img src="./img/coffin/5.jpg"/></li>
                         <li class="slide"><img src="./img/coffin/6.jpg"/></li>
-                    </ul>
-                  </div>
-                  <div class="arrows">
-                    <div class="arrow arrow-left"><img src="./img/arrow-left.png"/></div>
-                    <div class="arrow arrow-right"><img src="./img/arrow-right.png"/></div>
-                  </div>
+                    <li class="slide"><img src="./img/coffin/7.jpg"/></li>
+                    <li class="slide"><img src="./img/coffin/8.jpg"/></li>
+                    <li class="slide"><img src="./img/coffin/9.jpg"/></li>
+                    <li class="slide"><img src="./img/coffin/10.jpg"/></li>
+                    <li class="slide"><img src="./img/coffin/11.jpg"/></li>
+                 </ul>
                 </div>
+                <div class="arrows">
+                 <div class="arrow arrow-left"><img src="./img/arrow-left.png"/></div>
+                  <div class="arrow arrow-right"><img src="./img/arrow-right.png"/></div>
+                 </div>
+            </div>
         </main>
         <!-- footer -->
         <footer>
             <div class="single-image">
               <img src="./img/road-purple.jpg"/>
             </div>
+            <div class="factor"><img src="./img/factor.png"/></div>
             <div class="social-section">
               <div class="home-social">
                 <a href="https://voidxwitch.bandcamp.com/" class="social-link" aria-label="Bandcamp page">
@@ -197,10 +241,13 @@
                 <a href="https://twitter.com/voidxwitch" class="social-link" aria-label="Twitter account">
                   TWITTER
                 </a>
+                <a href="https://www.tiktok.com/@_voidxwitch_" class="social-link" aria-label="Tiktok account page">
+                  TIKTOK
+                </a>
                 <a href="https://voidxwitch.tumblr.com/" class="social-link" aria-label="Tumblr blog">
                   TUMBLR
                 </a>
-                <a href="https://www.youtube.com/channel/UCBF7R8jgmf-jIGt0Gv-jntA" class="social-link" aria-label="Youtube channel">
+                <a href="https://www.youtube.com/@voidxwitch" class="social-link" aria-label="Youtube channel">
                   YOUTUBE
                 </a>
                 <a href="https://438punk.house/@voidxwitch" class="social-link" aria-label="Mastodon account">
