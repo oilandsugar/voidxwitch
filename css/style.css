@@ -216,6 +216,11 @@ body {
     z-index:100;
 }
 
+.patreon-banner {
+    position:relative;
+    z-index:100;
+}
+
 .button {
   padding: 12px 16px;
   background: var(--backColor);
