@@ -86,6 +86,14 @@ body {
   text-align: center;
 }
 
+.red {
+    color: #d32b20;
+}
+
+.blue {
+    color:#3f4dfe;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -168,7 +176,7 @@ body {
   top:0;
   right:0;
   left:0;
-  background-image: url("../img/website-top-img.jpg");
+  background-image: url("../img/website-top-botbh-dither-blue.png");
   background-size: cover;
   background-position: center;
 }
@@ -201,6 +209,11 @@ body {
 .top-logo {
   max-width:800px;
   margin:0 auto;
+}
+
+.top-logo img {
+    filter: drop-shadow(1px 1px 8px rgba(146, 16, 16, 0.7));
+    -webkit-filter: drop-shadow(1px 1px 8px rgba(146, 16, 16, 0.7));
 }
 
 .logo {
@@ -305,11 +318,11 @@ body {
 
 .home-social a {
   text-decoration: none;
-  color: #f9f9e4;
+  color: #3f4dfe;
 }
 
 .home-social a:hover {
-  color: #666;
+  color: #fff;
 }
 
 .social-link {
@@ -365,6 +378,42 @@ body {
 .album-links {
    max-width:342px;
     margin:0 auto;
+}
+
+/* --- single release --- */
+
+.botbh-release .project.video {
+    margin-top:0;
+    margin-bottom:0px;
+}
+
+.botbh-release {
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.botbh-title {
+  z-index: 10;
+  position: relative;
+  max-width: 400px;
+  padding: 0 24px;
+  margin:0 auto;
+    margin-top:-40px;
+    margin-bottom:60px;
+}
+
+.botbh-title img {
+    filter: drop-shadow(1px 1px 8px rgba(146, 16, 16, 0.7));
+   -webkit-filter: drop-shadow(1px 1px 8px rgba(146, 16, 16, 0.7));
+}
+
+.botbh-content {
+    background: url(../img/botbh-back-img-dither2.png);
+  background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 213px;
+  margin-top: -90px;
+    mix-blend-mode: lighten;
 }
 
 /* --- merch --- */
@@ -474,6 +523,11 @@ body.links {
   max-width:342px;
 }
 
+.links-container img, h2 {
+    mix-blend-mode: normal;
+    position:relative;
+}
+
 .links-container a {
   z-index:500;
   position:relative;
@@ -490,7 +544,7 @@ body.links {
     margin-bottom:16px;
     font-family: 'Avara';
     border: 2px solid #000;
-    padding-bottom: 8px;
+    line-height: 0;
 }
 
 .video-link {
@@ -500,7 +554,11 @@ body.links {
     margin-bottom:16px;
     font-family: 'Avara';
     border: 2px solid #000;
-    padding-bottom: 8px;
+    line-height: 0;
+}
+
+.video-link img {
+    mix-blend-mode: normal;
 }
 
 .merch-link {
@@ -510,7 +568,7 @@ body.links {
     margin-bottom:16px;
     font-family: 'Avara';
     border: 2px solid #000;
-    padding-bottom: 8px;
+    line-height: 0;
 }
 
 .button-link {
@@ -524,15 +582,37 @@ body.links {
   text-decoration: none;
   font-family: 'Avara';
   letter-spacing: 3px;
-  background-image: url(../img/button.jpg);
+  background-image: url(../img/button-dither.jpg);
   background-size: cover;
   line-height: 39px;
   height: 35px;
-    border: 1px solid #000;
+  border: 1px solid #000;
 }
 
 .button-link:hover {
-  background-image: url(../img/button-hover.jpg);
+  background-image: url(../img/button-hover-dither.jpg);
+}
+
+.button-link-red {
+  padding: 8px 16px;
+  font-weight:bold;
+  font-size:18px;
+  display:block;
+  text-align:center;
+  margin-bottom:8px;
+  border-radius:1px;
+  text-decoration: none;
+  font-family: 'Avara';
+  letter-spacing: 3px;
+  background-image: url(../img/button-red-dither.jpg);
+  background-size: cover;
+  line-height: 39px;
+  height: 35px;
+  border: 1px solid #000;
+}
+
+.button-link-red:hover {
+  background-image: url(../img/button-red-hover-dither.jpg);
 }
 
 /* --- Videos --- */
@@ -555,9 +635,20 @@ body.links {
   padding-top: 30px;
   height: 0;
   overflow: visible;
+  margin: -42px -46px;  
 }
 
 .video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.video-container img {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: normal;
+  border-radius: 0;
+}
 
 .video-container.sd {
   padding-bottom: 72.25%;
@@ -579,13 +670,19 @@ body.links {
   margin-left: auto;
   margin-right: auto;
   margin-top:100px;
-    background-image: url(../img/video-frame.png);
+    /*background-image: url(../img/video-frame.png);
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 6% 6.5% 8.3% 6.5%;
+    padding: 6% 6.5% 8.3% 6.5%;*/
     position: relative;
   z-index: 300;
+    border: 94px solid transparent;
+    border-image: url(../img/video-frame-border.png) 39% stretch;
+}
+
+.project.video.red {
+    border-image: url(../img/video-frame-border-red.png) 39% stretch;
 }
 
 .background-element-wrapper {
@@ -630,7 +727,7 @@ body.links {
 }
 
 #kill-the-pain {
-  background-image: url("../img/kill-the-pain-bg-blue.jpg");   
+  background-image: url("../img/kill-the-pain-bg-blue-dither.png");   
 background-size:cover;
 }
 
@@ -861,6 +958,9 @@ background-size:cover;
     .column-right {
         margin-top:24px;
     }
+    .column-left {
+        padding:0;
+    }
   .links-container {
      max-width:100%;
      margin:0 16px 116px 16px;
@@ -892,7 +992,7 @@ background-size:cover;
     height: 70vh; 
   }
     .gradient-up {
-        top: calc(60vh - 90px);
+        top: calc(60vh - 118px);
     }
     .announcement {
         max-width:300px;
@@ -905,10 +1005,19 @@ background-size:cover;
     }
       .project.video {
     max-width:100%;
-    border-right:0;
-    border-left:0;
     margin-top:0;
   }
+    .project.video.red {
+      border-image: url(../img/video-frame-border-red.png) 46% stretch;
+    }
+    .project.video {
+      border-image: url(../img/video-frame-border.png) 46% stretch;
+        margin-left: -3%;
+    }
+    .botbh-content {
+        padding-top: 229px;
+  margin-top: -175px;
+    }
   .video-announcement img {
     max-width:250px;
   }
@@ -932,5 +1041,12 @@ background-size:cover;
     }
     .factor img {
     max-width:100%;
-}
+    }
+    .button-link, .button-link-red {
+        height:30px;
+        line-height:35px;
+    }
+    .botbh-release {
+        padding-bottom:48px;
+    }
 }
