@@ -279,6 +279,20 @@ body {
     background-position: center;
 }
 
+/* ---------- nav ----------- */
+
+nav {
+    z-index:10;
+    position: relative;
+    margin-top: 0;
+    width:100%;
+}
+
+nav .medium-content {
+    text-align:center;
+    margin-top:0;
+}
+
 /* ----------- content -------------- */
 
 .framed {
@@ -1189,6 +1203,14 @@ textarea {
     }
     .big-padding-bottom, .large-padding-bottom {
         padding-bottom: var(--spacing_lg);
+    }
+    nav {
+        position: absolute;
+        top: var(--spacing_lg);
+        width:calc(100% - 10vw);
+    }
+    nav .medium-content {
+        text-align: right;
     }
 }
 
