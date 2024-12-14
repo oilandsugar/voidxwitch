@@ -1208,6 +1208,7 @@ textarea {
         position: absolute;
         top: var(--spacing_lg);
         width:calc(100% - 10vw);
+        z-index:1000;
     }
     nav .medium-content {
         text-align: right;
